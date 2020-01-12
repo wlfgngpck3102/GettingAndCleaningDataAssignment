@@ -34,3 +34,30 @@ The analysis is performed via running the run_analysis.R script; please see the 
 5. **Groups Data By Subject And Activity And Takes Average Of All Measurements:** Finally, having created the cleanedData data set in Step 4 above, we apply a group_by using subject and activity, and then summarise using a "~ mean(.)" lambda.  The result is a data set called tidyData that has the average of every measurement in cleanedData, grouped by subject and activity.  This accomplishes Step 5 of the assignment, which says that run_analysis.R "creates a second, independent tidy data set with the average of each variable for each activity and each subject."
 
 6. **Prints Out TidyData To A Text File:** Finally, the code prints out the tidyData data set to a text file so that it can be submitted for this assignment or otherwise reviewed.  The script also includes a load function that allows a user to load the tidyData.txt file back in, for easy review within R itself, if desired (please see README file for instructions).
+
+
+# Description Of The Data
+
+This section gives details on what the variables themselves mean, by describing each component.
+
+* **Time** denotes it's a time domain signal
+
+* **Frequency** denotes that a Fast Fourier Transform was applied to the signal
+
+* **Accelerometer** means that an accelerometer signal was used
+
+* **Gyroscope** means that a gyroscope signal was used
+
+* **Body** indicates a body movement acceleration signal
+
+* **Gravity** indicates a gravity acceleration signal
+
+* **Jerk** denotes a jerk signal
+
+* **Magnitude** denotes the Euclidean norm magnitude
+
+* **Mean** denotes the arithmatic mean
+
+* **Std** denotes the usual standard deviation
+
+* **X/Y/Z** denote the axis of movement
